@@ -270,7 +270,7 @@ body {
   font-weight: 400;
   line-height: 99px;
   margin-bottom: 10px;
-  color: #5E4D42;
+  color: rgb(94, 77, 76);
 }
 .header-bottom__descr {
   padding-left: 25px;
@@ -279,7 +279,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   line-height: 37px;
-  color: #5E4D42;
+  color: rgb(94, 77, 76);
 }
 .header-bottom_light {
   color: rgb(204, 116, 66);
@@ -291,7 +291,7 @@ body {
   font-size: 30px;
   font-weight: 300;
   line-height: 47px;
-  color: #5E4D42;
+  color: rgb(94, 77, 76);
 }
 .header-bottom__catalog-wrapper {
   position: absolute;
@@ -655,6 +655,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
   grid-area: form1;
   padding-left: 50px;
@@ -934,7 +937,7 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
   }
   .phone__items {
     background-color: #fff;
@@ -1118,6 +1121,9 @@ input {
   .dark-img {
     right: 5%;
   }
+  .form__inner-chek {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 370px) {
   .nav__exit {
@@ -1139,9 +1145,6 @@ input {
     padding-left: 18px;
   }
   .form__border {
-    width: 90%;
-  }
-  .form__inner-chek {
     width: 90%;
   }
 }
