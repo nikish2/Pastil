@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru" class="root">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pastilda.css">
+    <title>Pastilda</title>
+</head>
+
+<body>
+    <header class="header" id="main">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <img src="./img/logo2.png" alt="logo" class="logo">
+
+                <nav class="nav">
+                    <ul class="navigation">
+                        <li class="navigation__items">
+                            <a href="" class="navigation__link">Акции</a>
+                        </li>
+                        <li class="navigation__items">
+                            <a href="#catalog" class="navigation__link">Каталог</a>
+                        </li>
+                        <li class="navigation__items">
+                            <a href="" class="navigation__link navigation__link_opening">Покупателям</a>
+                            <ul class="submenu">
+                                <li class="submenu__items"><a href="#" class="submenu__link">Как оформить заказ</a></li>
+                                <li class="submenu__items"><a href="#" class="submenu__link">Доставка и оплата</a></li>
+                                <li class="submenu__items"><a href="#" class="submenu__link">Возврат и обмен</a></li>
+                                <li class="submenu__items"><a href="#" class="submenu__link">Реквизиты компании</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__items">
+                            <a href="" class="navigation__link">О бренде</a>
+                        </li>
+                        <li class="navigation__items">
+                            <a href="" class="navigation__link">Вопрос-ответ</a>
+                        </li>
+                        <li class="navigation__items">
+                            <a href="#contacts" class="navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="phone__menu">
+                        <div class="phone__icon">
+                            <a target="_blank" href="#">
+                                <img src="./img/vk.svg" alt="" class="phone__items">
+                            </a>
+                            <a target="_blank" href="#">
+                                <img src="./img/tg.svg" alt="" class="phone__items">
+                            </a>
+                        </div>
+                        <a href="tel:+79122137638" class="phone__tel">
+                            +7(982)213-76-98
+                        </a>
+                        <p class="phone__city">
+                            Г.ЕКАТЕРИНБУРГ
+                        </p>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header__contacts">
+                <div class="header__wrap">
+                    <a href=""><img class="icon" src="./img/vk.svg" alt="#"></a>
+                    <a href=""><img class="icon icon__not-margin" src="./img/tg.svg" alt="#"></a>
+                </div>
+
+                <div class="header__button">
+                    <a href="" class="header__btn">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+            </div>
+
+            <div class="burger-wrapper">
+                <div class="header__top-burger">
+                    <span></span>
+                </div>
+
+                <button class="theme">
+                    <img class="theme__none theme__dark theme__dark_active " src="./img/lun.svg" alt="темная">
+                    <img class="theme__white theme__white_active" src="./img/sun.svg" alt="светлая">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- header-bottom----------------------------------------------------- -->
+        <section class="header-bottom">
+            <div class="container">
+                <h1 class="header-bottom__title">
+                    ПАСТИЛЬДА - это
+                </h1>
+
+                <ul class="header-bottom__descr">
+                    <li class="header-bottom__items">полезные сладости <span class="header-bottom_light"> БЕЗ
+                            САХАРА</span>для всех
+                    </li>
+                    <li class="header-bottom__items"> эстетика натурального природного вкуса <br> и цвета</li>
+                    <li class="header-bottom__items"> высокие требования к качеству продукции и стандартам обслуживания
+                        клиентов
+                    </li>
+                </ul>
+
+                <p class="header-bottom__text">
+                    ПАСТИЛЬДА - это вкусно, <br> полезно и просто красиво…
+                </p>
+
+                <div class="header-bottom__catalog-wrapper">
+                    <img src="./img/Link.png" alt="" class="header-bottom__circle">
+                    <a href="#catalog" class="header-bottom__catalog">
+                        Перейти <br> в каталог
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- run-img------------------------------------------------------------ -->
+
+        <section class="run-img">
+            <img src="./img/full.png" class="run-img__active" alt="">
+            <img src="./img/full.png" class="run-img__active" alt="">
+        </section>
+        <!-- catalog------------------------------------------------------------ -->
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <div class="catalog__title">
+                    КАТАЛОГ <span class="catalog_orange">ПОЛЬЗЫ </span>
+                    И <span class="catalog_orange">ВКУСА</span>
+                </div>
+
+                <div class="catalog__menu menu">
+                    <a href="" class="menu__link menu__link_opacity">Все</a>
+                    <a href="" class="menu__link menu__link_wide">Пастила</a>
+                    <a href="" class="menu__link">Чай</a>
+                </div>
+
+                <div class="catalog__wrapper">
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-one">
+                            <img src="./img/catalog1.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> <span class="catalog__prices"></span> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-two">
+                            <img src="./img/catalog2.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-three">
+                            <img src="./img/catalog3.jpg" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-four">
+                            <img src="./img/catalog4.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-five">
+                            <img src="./img/catalog5.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-six">
+                            <img src="./img/catalog6.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-seven">
+                            <img src="./img/catalog7.png" alt="" class="catalog__image">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-eight">
+                            <a href="https://pastilda.ru/" class="catalog__promotion"> АКЦИЯ</a>
+                            <img src="./img/catalog8.png" alt="" class="catalog__image">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-nine">
+                            <img src="./img/catalog9.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-ten">
+                            <img src="./img/catalog10.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-eleven">
+                            <a href="#" class="catalog__promotion"> АКЦИЯ</a>
+                            <img src="./img/catalog11.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-twelve">
+                            <img src="./img/catalog12.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Пастила ЯБЛОКО <br> от 150 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-thirteen">
+                            <img src="./img/catalog13.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Подарочный набор PASTILDA #1 <br> от 500 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-fourteen">
+                            <img src="./img/catalog14.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                Чай ТРАВЯНОЙ (на основе Кипрея) <br> от 200 ₽
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="catalog__card">
+                        <div class="catalog__inner-img catalog__inner-img_bacground-fifteen">
+                            <img src="./img/catalog15.png" alt="" class="catalog__image ">
+                        </div>
+                        <div class="catalog__inner-text">
+                            <a href="" class="catalog__text">
+                                ТОЛЬКО ДЛЯ ТЕБЯ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- event------------------------------------------------------------ -->
+
+        <section class="event">
+            <div class="event__container container">
+                <h2 class="event__content">
+                    акции <br> <span class="event__text"></span>
+                </h2>
+
+                <div class="event__button">
+                    <a href="#" class="event__btn">подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- connection------------------------------------------------------------ -->
+
+        <section id="contacts" class="connection">
+            <div class="connection__wrapper">
+                <div class="connection__inner"></div>
+                <strong class="connection__questions">
+                    <p class="connection__descr">
+                        остались вопросы? <br> свяжитесь с нами
+                    </p>
+                    <a href="tel:+79122137638" class="phone">+7(912)244-43-38</a>
+                    <a href="mailto:pastilda22@yandex.ru" class="mail">pas289@yandex.ru</a>
+                </strong>
+
+                <div class="connection__social">
+                    <div class="vk-block">
+                        <img class="connection__img-vk" src="./img/Link.png" alt="">
+                        <a href="https://vk.com/pastilda" class="connection__vk">ВКонтакте</a>
+                    </div>
+                    <div class="tg-block">
+                        <img class="connection__img-tg" src="./img/Link.png" alt="">
+                        <a href="https://t.me/cubamarina" class="connection__tg">Telegram</a>
+                    </div>
+                    <div class="wa-block">
+                        <img class="connection__img-wa" src="./img/Link.png" alt="">
+                        <a href="https://api.whatsapp.com/send/?phone=79122137638&text&type=phone_number&app_absent=0"
+                            class="connection__wa">WhatsApp</a>
+                    </div>
+                </div>
+
+                <form action="#" method="get" class="form">
+                    <div class="form__border">
+                        <input type="text" name="uzername" placeholder="Ваше имя" class="form__name">
+                    </div>
+                    <div class="form__border">
+                        <p class="form__number">
+                            +7
+                        </p>
+                        <input type="tel" id="phone" name="uzertel" placeholder="(999) 999-99-99" class="form__tel">
+                    </div>
+                    <div class="form__border">
+                        <input type="question" name="question" placeholder="Ваш вопрос" class="form__question">
+                    </div>
+                    <div class="form__inner-chek">
+
+                        <label class="form__consent" >
+                            <input class="form__cheсkbox" type="checkbox" name="consent">
+                            <span class="fake__checkbox"></span>
+                            Я согласен (-на)<span class="form__line"> с политикой конфиденциальности</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" name="btn" class="form__btn">отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer------------------------------------------------------------ -->
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__inner">
+                    <a href="#main" class="footer__logo-link">
+                        <img src="./img/logo2.png" alt="logo" class="footer__logo">
+                    </a>
+                    <div class="footer__text">
+                        © ООО «Пастильда»
+                        ИНН 5453463
+                        ОГРН 436363434
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__bold">Главная</li>
+                    <li><a href="" class="footer__link">Каталог</a></li>
+                    <li><a href="" class="footer__link">О бренде</a></li>
+                    <li><a href="" class="footer__link">Частые вопросы</a></li>
+                    <li><a href="" class="footer__link">Контакты</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__bold">Покупателям</li>
+                    <li><a href="" class="footer__link">Доставка и оплата</a></li>
+                    <li><a href="" class="footer__link">Возврат и обмен</a></li>
+                    <li><a href="" class="footer__link">Как оформить заказ</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__bold">Информация</li>
+                    <li class="footer__info"><a href="" class="footer__link">Политика конфиденциальности</a></li>
+                    <li class="footer__info"><a href="" class="footer__link">Реквизиты компании</a></li>
+                    <li class="footer__info"><a href="" class="footer__link">Разработка сайта</a></li>
+                </ul>
+            </div>
+            <div class="footer__payment">
+                <img src="./img/footer_bacement.jpg" alt="card">
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/jquery.maskedinput.js"></script>
+    <script src="js/past.js"></script>
+</body>
+
+</html>

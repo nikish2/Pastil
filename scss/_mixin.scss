@@ -1,0 +1,15 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin border{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 459px;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid#5E4D42;
+    gap: 10px;
+}
