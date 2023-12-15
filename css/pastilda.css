@@ -22,22 +22,17 @@ a {
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background-color: rgba(var(--main-rgb));
-    color: var(--main);
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: rgba(var(--main-rgb));
-    color: var(--main);
-  }
-}
 body {
   font-family: "DXLubavaOTF.ttf", sans-serif;
   overflow-x: hidden;
   background-color: rgba(var(--main-rgb));
+}
+
+.light {
+  --main: #5E4D42;
+  --main-rgb: 255, 255, 255;
+  --burger-beg: 255, 255, 255;
+  color-scheme: light;
 }
 
 .dark {
@@ -55,12 +50,12 @@ body {
   border-color: transparent;
   display: inline-block;
 }
-.theme__white, .theme__dark {
+.theme__light, .theme__dark {
   position: absolute;
   left: 11%;
   top: -40%;
 }
-.theme__white.active {
+.theme__light.active {
   display: none;
 }
 .theme__dark.active {

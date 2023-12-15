@@ -112,12 +112,14 @@ burger();
 
 let root = document.querySelector(':root')
 const theme = document.querySelector('.theme');
+root.classList.add('light');
 function themeFile () {
   theme.addEventListener('click', () => {
    
     root.classList.toggle('dark');
     document.querySelector('.theme__dark').classList.toggle('active');
-    document.querySelector('.theme__white').classList.toggle('active');
+    document.querySelector('.theme__light').classList.toggle('active');
   })
 }
 themeFile ();
+
