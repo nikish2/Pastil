@@ -15,17 +15,25 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --main: #5E4D42;
-  --main-rgb: 255, 255, 255;
-  --burger-beg: 255, 255, 255;
-  color-scheme: light;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main: #5E4D42;
+    --main-rgb: 255, 255, 255;
+    --burger-beg: 255, 255, 255;
+    color-scheme: light;
+  }
 }
-
 body {
   font-family: "DXLubavaOTF.ttf", sans-serif;
   overflow-x: hidden;
   background-color: rgba(var(--main-rgb));
+}
+
+.light {
+  --main: #5E4D42;
+  --main-rgb: 255, 255, 255;
+  --burger-beg: 255, 255, 255;
+  color-scheme: light;
 }
 
 .dark {
@@ -39,7 +47,6 @@ body {
   width: 20px;
   height: 20px;
   position: relative;
-  z-index: -99;
   background-color: transparent;
   border-color: transparent;
   display: inline-block;

@@ -21,12 +21,22 @@ a {
 
 
 
-:root {
-    --main: #5E4D42;
-    --main-rgb: 255, 255, 255;
-    --burger-beg: 255, 255, 255;
-    color-scheme: light;
-}
+// :root {
+//     --main: #5E4D42;
+//     --main-rgb: 255, 255, 255;
+//     --burger-beg: 255, 255, 255;
+//     color-scheme: light;
+// }
+@media (prefers-color-scheme: dark) {
+    // :root { background-color:rgba(var(main-rgb));
+    //     color: var(--main); }
+    :root {
+        --main: #5E4D42;
+        --main-rgb: 255, 255, 255;
+        --burger-beg: 255, 255, 255;
+        color-scheme: light;
+    }
+  }
 
 body {
     font-family: 'DXLubavaOTF.ttf', sans-serif;
@@ -34,13 +44,14 @@ body {
     background-color: rgba(var(--main-rgb));
 }
 
+
 // dark and white zeme
-// .light{
-//     --main: #5E4D42;
-//     --main-rgb: 255, 255, 255;
-//     --burger-beg: 255, 255, 255;
-//     color-scheme: light;
-// }
+.light{
+    --main: #5E4D42;
+    --main-rgb: 255, 255, 255;
+    --burger-beg: 255, 255, 255;
+    color-scheme: light;
+}
 .dark {
     --main: #fff;
     --main-rgb: 51, 51, 51;
@@ -52,7 +63,6 @@ body {
     width: 20px;
     height: 20px;
     position: relative;
-    z-index: -99;
     background-color: transparent;
     border-color: transparent;
     display: inline-block;
