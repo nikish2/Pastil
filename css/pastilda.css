@@ -16,30 +16,26 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --main: #5E4D42;
-    --main-rgb: 255, 255, 255;
-    --burger-beg: 255, 255, 255;
+  body {
+    background-color: rgb(51, 51, 51);
+    color: #FFF;
+  }
+  .header__container {
+    background-color: rgb(51, 51, 51);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(255, 255, 255);
+    color: #525252;
+  }
+  .header__container {
+    background-color: rgb(255, 255, 255);
   }
 }
 body {
   font-family: "DXLubavaOTF.ttf", sans-serif;
   overflow-x: hidden;
-  background-color: rgba(var(--main-rgb));
-}
-
-.light {
-  --main: #5E4D42;
-  --main-rgb: 255, 255, 255;
-  --burger-beg: 255, 255, 255;
-  color-scheme: light;
-}
-
-.dark {
-  --main: #fff;
-  --main-rgb: 51, 51, 51;
-  --burger-beg: 40, 40, 40;
-  color-scheme: dark;
 }
 
 .theme {
@@ -75,7 +71,6 @@ body {
   background-position: center;
 }
 .header__container {
-  background-color: rgba(var(--main-rgb));
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
