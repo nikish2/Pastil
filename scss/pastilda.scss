@@ -28,8 +28,15 @@ a {
     color-scheme: light;
 }
 @media (prefers-color-scheme : dark) {
-    body  {
+    :root   {
         background-color: rgba(var(--main-rgb));
+        color:var(--main);
+   }
+}
+@media (prefers-color-scheme : light) {
+    :root   {
+        background-color: rgba(var(--main-rgb));
+        color:var(--main);
    }
 }
 
@@ -57,8 +64,6 @@ body {
 
     &__white,
     &__dark {
-        // width: 20px;
-        // height: 20px;
         position: absolute;
         left: 11%;
         top: -40%;
