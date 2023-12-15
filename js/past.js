@@ -120,6 +120,8 @@ function themeFile () {
     document.querySelector('.theme__light').classList.toggle('active');
   })
 }
+themeFile ();
+
 // themeFile ();
 // let root = document.querySelector('.light');
 // function themeFile() {

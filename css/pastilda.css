@@ -28,13 +28,6 @@ body {
   background-color: rgba(var(--main-rgb));
 }
 
-.light {
-  --main: #5E4D42;
-  --main-rgb: 255, 255, 255;
-  --burger-beg: 255, 255, 255;
-  color-scheme: light;
-}
-
 .dark {
   --main: #fff;
   --main-rgb: 51, 51, 51;

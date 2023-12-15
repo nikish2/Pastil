@@ -28,19 +28,6 @@ a {
     color-scheme: light;
 }
 
-// @media (prefers-color-scheme : dark) {
-//     :root   {
-//         background-color: rgba(var(--main-rgb));
-//         color:var(--main);
-//    }
-// }
-// @media (prefers-color-scheme : light) {
-//     :root   {
-//         background-color: rgba(var(--main-rgb));
-//         color:var(--main);
-//    }
-// }
-
 body {
     font-family: 'DXLubavaOTF.ttf', sans-serif;
     overflow-x: hidden;
@@ -48,12 +35,12 @@ body {
 }
 
 // dark and white zeme
-.light{
-    --main: #5E4D42;
-    --main-rgb: 255, 255, 255;
-    --burger-beg: 255, 255, 255;
-    color-scheme: light;
-}
+// .light{
+//     --main: #5E4D42;
+//     --main-rgb: 255, 255, 255;
+//     --burger-beg: 255, 255, 255;
+//     color-scheme: light;
+// }
 .dark {
     --main: #fff;
     --main-rgb: 51, 51, 51;
