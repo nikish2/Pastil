@@ -22,6 +22,11 @@ a {
   color-scheme: light;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgba(var(--main-rgb));
+  }
+}
 body {
   font-family: "DXLubavaOTF.ttf", sans-serif;
   overflow-x: hidden;
