@@ -110,29 +110,29 @@ function burger() {
 burger();
 
 
-// let root = document.querySelector(':root')
-// const theme = document.querySelector('.theme');
-// function themeFile () {
-//   theme.addEventListener('click', () => {
+let root = document.querySelector(':root')
+const theme = document.querySelector('.theme');
+function themeFile () {
+  theme.addEventListener('click', () => {
 
-//     root.classList.toggle('dark');
-//     document.querySelector('.theme__dark').classList.toggle('active');
-//     document.querySelector('.theme__light').classList.toggle('active');
-//   })
-// }
-// themeFile ();
-let root = document.querySelector('.light');
-function themeFile() {
-  document.querySelector('.theme').addEventListener('click', () => {
-    for (let i = 0; i < root.length; i++) {
-      if (root[i].classList.contains('light')) {
-        root[i].classList.remove('light');
-        root[i].classList.add('dark');
-      } else if (root[i].classList.contains('dark')) {
-        root[i].classList.remove('dark');
-        root[i].classList.add('light');
-      }
-    }
+    root.classList.toggle('dark');
+    document.querySelector('.theme__dark').classList.toggle('active');
+    document.querySelector('.theme__light').classList.toggle('active');
   })
 }
-themeFile();
+// themeFile ();
+// let root = document.querySelector('.light');
+// function themeFile() {
+//   document.querySelector('.theme').addEventListener('click', () => {
+//     for (let i = 0; i < root.length; i++) {
+//       if (root[i].classList.contains('light')) {
+//         root[i].classList.remove('light');
+//         root[i].classList.add('dark');
+//       } else if (root[i].classList.contains('dark')) {
+//         root[i].classList.remove('dark');
+//         root[i].classList.add('light');
+//       }
+//     }
+//   })
+// }
+// themeFile();
