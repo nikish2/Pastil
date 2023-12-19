@@ -20,58 +20,34 @@ a {
 }
 
 
-// :root {
-//     --main: #5E4D42;
-//     --main-rgb: 255, 255, 255;
-//     --burger-beg: 255, 255, 255;
-//     color-scheme: light;
+:root {
+    --main: #5E4D42;
+    --main-rgb: 255, 255, 255;
+    --burger-beg: 255, 255, 255;
+
+}
+
+// .theme-dark {
+//     --main: #ffff;
+//     --main-rgb: 51, 51, 51;
+//     --burger-beg: 39, 39, 39;
+//     color-scheme: dark;
 
 // }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(51, 51, 51);
-        color: #FFF;
-    }
-
-    .header__container {
-        background-color: rgb(51, 51, 51);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: rgb(255, 255, 255);
-        color: #525252;
-    }
-
-    .header__container {
-        background-color: rgb(255, 255, 255);
-    }
-}
 
 body {
     font-family: 'DXLubavaOTF.ttf', sans-serif;
     overflow-x: hidden;
-    // background-color: rgb(var(--burger-beg));
-    // color: var(--main);
-
+    background-color: rgb(var(--main-rgb));
+    color: var(--main);
+    transition: 0.4s all;
 }
-
-
-// dark and white zeme
-// .light{
-//     --main: #5E4D42;
-//     --main-rgb: 255, 255, 255;
-//     --burger-beg: 255, 255, 255;
-//     color-scheme: light;
-// }
-// .dark {
-//     --main: #fff;
-//     --main-rgb: 51, 51, 51;
-//     --burger-beg: 40, 40, 40;
-//     color-scheme: dark;
-// }
+.dark-mode {
+    --main: #ffff;
+    --main-rgb: 51, 51, 51;
+    --burger-beg: 39, 39, 39;
+}
 
 .theme {
     width: 20px;
@@ -113,14 +89,13 @@ body {
     background-position: center;
 
     &__container {
-        // background-color: rgb(var(--burger-beg));
-        // color: var(--main);
+        background-color: rgb(var(--main-rgb));
         width: 100vw;
         display: flex;
         padding: 5px 40px;
         position: fixed;
         top: 0;
-        z-index: 99;
+        z-index: 110;
     }
 
     &__wrapper {
@@ -153,6 +128,8 @@ body {
 .container {
     max-width: 1240px;
     margin: auto;
+    position: relative;
+    z-index: 99;
 }
 
 .logo {
@@ -183,12 +160,12 @@ body {
 
     &__link {
         display: inline-block;
-        color: #5E4D42;
         color: var(--main);
     }
 
     &__link_opening::after {
         content: url(../img/icons8-сортировать-по-убыванию-11.png);
+       
     }
 
     &__items:hover>.submenu {
@@ -218,8 +195,7 @@ body {
     height: 150px;
     padding-top: 10px;
     line-height: 2rem;
-    background-color: #fff;
-    background-color: rgba(var(--main-rgb));
+    background-color: rgb(var(--main-rgb));
     border: 1px solid#954f21;
     top: calc(100% + 10px);
     left: -50%;
@@ -330,6 +306,7 @@ body {
         font-weight: 500;
         line-height: 37px;
         color: rgb(94, 77, 76);
+        opacity: 1;
     }
 
     &_light {
@@ -344,6 +321,7 @@ body {
         font-weight: 300;
         line-height: 47px;
         color: rgb(94, 77, 76);
+        opacity: 1;
     }
 
     &__catalog-wrapper {

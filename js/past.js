@@ -1,8 +1,6 @@
-jQuery(function ($) {
-  $("#phone").mask("(999) 999-9999");
-});
-
-
+// jQuery(function ($) {
+//   $("#phone").mask("(999) 999-9999");
+// });
 
 // НАДО ЧТО ТО ПРИДУМАТЬ МОЖЕТ СДЕЛАТЬ ДОБАВЛЕНИЕ active ПРИ СКРОЛЕ ДО ТЕКСТА ИЛИ ЕЩЕ ЧТО 
 
@@ -110,15 +108,97 @@ function burger() {
 burger();
 
 
-let root = document.querySelector(':root')
-const theme = document.querySelector('.theme');
-function themeFile () {
-  theme.addEventListener('click', () => {
 
-    root.classList.toggle('dark');
-    document.querySelector('.theme__dark').classList.toggle('active');
-    document.querySelector('.theme__light').classList.toggle('active');
-  })
+// создание светлой и темной темы при обновлении страницы тема запоминается и остается 
+
+const body = document.body;
+const theme = document.querySelector('.theme');
+let mode = 'light';
+
+if (!localStorage.getItem('mode')) {
+  localStorage.setItem('mode', mode);
+} else {
+  mode = localStorage.getItem('mode');
 }
-themeFile ();
+
+if (mode === 'dark') {
+  themeModeToggle(mode);
+}
+// делается клик на 2 кнопки для смены иконки при изменении темы
+theme.addEventListener('click', () => {
+  document.querySelector('.theme__light').classList.toggle('active');
+  document.querySelector('.theme__dark').classList.toggle('active');
+// если переменная mode = светлой теме тогда при клике включается функция прописаная ниже с темной темой
+// если = темной то включается переменная со светлой темой
+  if (mode === 'light') {
+    themeModeToggle('dark');
+  } else {
+    themeModeToggle('light')
+  }
+  localStorage.setItem('mode', mode);
+});
+
+
+// нажимаем на кнопку добавляется класс dark-mode вкл темная тема ,нажимаем еще раз dark-mode очищается и включается светлая тема
+function themeModeToggle(newMode) {
+  if (newMode === 'dark') {
+    body.className = 'dark-mode';
+    mode = 'dark';
+  } else {
+    body.className = '';
+    mode = 'light';
+  }
+}
+
+
+
+
+
+
+// Напишите код, который создает переменную company, которая представляет собой объект.
+//  В объект поместите два свойства: post и name, со значениями 'developer' и 'Ivan'.После этого, выведите значение свойства post в функции
+// alert.Какой будет результат ?
+
+//   Решение с результатом ниже:
+
+let company = {
+  post: 'developer',
+  name: 'Ivan'
+  
+};
+alert(company.post);
+
+
+console.log(typeof 5 !== 5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

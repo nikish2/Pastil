@@ -15,27 +15,25 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(51, 51, 51);
-    color: #FFF;
-  }
-  .header__container {
-    background-color: rgb(51, 51, 51);
-  }
+:root {
+  --main: #5E4D42;
+  --main-rgb: 255, 255, 255;
+  --burger-beg: 255, 255, 255;
 }
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: rgb(255, 255, 255);
-    color: #525252;
-  }
-  .header__container {
-    background-color: rgb(255, 255, 255);
-  }
-}
+
 body {
   font-family: "DXLubavaOTF.ttf", sans-serif;
   overflow-x: hidden;
+  background-color: rgb(var(--main-rgb));
+  color: var(--main);
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.dark-mode {
+  --main: #ffff;
+  --main-rgb: 51, 51, 51;
+  --burger-beg: 39, 39, 39;
 }
 
 .theme {
@@ -71,6 +69,7 @@ body {
   background-position: center;
 }
 .header__container {
+  background-color: rgb(var(--main-rgb));
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +77,7 @@ body {
   padding: 5px 40px;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 110;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -116,6 +115,8 @@ body {
 .container {
   max-width: 1240px;
   margin: auto;
+  position: relative;
+  z-index: 99;
 }
 
 .logo {
@@ -144,7 +145,6 @@ body {
 }
 .navigation__link {
   display: inline-block;
-  color: #5E4D42;
   color: var(--main);
 }
 .navigation__link_opening::after {
@@ -173,8 +173,7 @@ body {
   height: 150px;
   padding-top: 10px;
   line-height: 2rem;
-  background-color: #fff;
-  background-color: rgba(var(--main-rgb));
+  background-color: rgb(var(--main-rgb));
   border: 1px solid #954f21;
   top: calc(100% + 10px);
   left: -50%;
@@ -282,6 +281,7 @@ body {
   font-weight: 500;
   line-height: 37px;
   color: rgb(94, 77, 76);
+  opacity: 1;
 }
 .header-bottom_light {
   color: rgb(204, 116, 66);
@@ -294,6 +294,7 @@ body {
   font-weight: 300;
   line-height: 47px;
   color: rgb(94, 77, 76);
+  opacity: 1;
 }
 .header-bottom__catalog-wrapper {
   position: absolute;
